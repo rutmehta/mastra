@@ -256,7 +256,8 @@ minimumReleaseAgeExclude:
   - fastify@5.12.5 || 5.12.6
   - '@blaxel/core@0.3.20'
   - '@fastify/proxy-addr@5.1.1'
-  - 'fast-uri@3.1.8'
+  # Renovate security update: fast-uri@4.2.3
+  - 'fast-uri@3.1.8 || 4.2.3'
   - 'fast-uri@4.2.1'
   - 'compression@1.8.2'
   - 'undici@8.11.2'
@@ -301,6 +302,8 @@ minimumReleaseAgeExclude:
   - "@storybook/addon-mcp@10.6.2"
   # Renovate security update: storybook@10.6.2
   - storybook@10.6.2
+  # Renovate security update: serialize-javascript@7.1.4
+  - serialize-javascript@7.1.4
 trustPolicyExclude:
   # Storybook 9.1.21 fixes the Storybook preview origin-validation advisories. It is
   # the official `v9` backport (GitHub Actions trusted publisher), but pnpm compares
@@ -363,7 +366,7 @@ overrides:
   langsmith@<0.6.0: ^0.6.0
   lodash@<=4.17.23: ^4.18.0
   prismjs@<1.30.0: ^1.30.0
-  serialize-javascript@<7.0.5: ^7.0.5
+  serialize-javascript@<7.0.5: ^7.1.4
   # Security floors for Dependabot alerts (transitive deps; patched versions
   # are within the parents' declared ranges).
   simple-git@<3.36.0: 4.0.1
@@ -374,7 +377,7 @@ overrides:
   webpack-dev-server@<5.2.5: 5.2.6
   qs@>=6.7.0 <6.16.0: 6.16.0
   fast-uri@>=3.0.0 <3.1.9: 3.1.9
-  fast-uri@>=4.0.0 <4.1.5: 4.2.1
+  fast-uri@>=4.0.0 <4.1.5: 4.2.3
   form-data@<2.5.6: 2.5.6
   form-data@>=4.0.0 <4.0.6: 4.0.6
   brace-expansion@>=1.0.0 <1.1.21: 1.1.21
